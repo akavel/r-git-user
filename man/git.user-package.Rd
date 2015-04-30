@@ -29,8 +29,4 @@ Maintainer: Mateusz Czapliński <czapkofan@gmail.com>
 \seealso{
 \code{\link[git2r:git2r-package]{git2r}}
 \code{\link[installr:installr-package]{installr}}
-\code{\link[<pkg>:<pkg>-package]{<pkg>}}
-}
-\examples{
-~~ simple examples of the most important functions ~~
 }

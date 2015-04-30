@@ -7,3 +7,4 @@ Author: Mateusz Czapliński
 Maintainer: Mateusz Czapliński <czapkofan@gmail.com>
 Description: Allows easy changing of "user" config settings for git version control (git config user.name, user.email)
 License: MIT
+Encoding: UTF-8
