@@ -1,3 +1,12 @@
+#' Get git user information
+#' 
+#' \code{git.get.user} retrieves git configuration describing the default user.
+#' 
+#' @param global if TRUE, retrieves system-global git configuration (i.e. --global);
+#' by default, retrieves configuration as used by the current git repository.
+#' 
+#' @note it requires git to be installed on the system.
+#' @note only tested on Windows as of now
 git.get.user <- function(global=FALSE) {
   opt_global <- c('--local')
   if (global) {
@@ -18,6 +27,14 @@ git.get.user <- function(global=FALSE) {
   return(list(name=name, email=email))
 }
 
+#' Set git user information
+#' 
+#' \code{git.set.user} sets the user name and email to be used by git.
+#' 
+#' @param name a character string containing full name of the user; e.g. "John Smith"
+#' @param email a character string containing email of the user; e.g. "jsmith@@example.com"
+#' @param global if TRUE, changes the system-global configuration of git; by default, changes
+#' the configuration local to the current git repository.
 git.set.user <- function(name, email, global=FALSE) {
   is.character(name) || stop('name must be text, e.g. "John Smith"')
   is.character(email) || stop('email must be text, e.g. "jsmith@example.com"')
