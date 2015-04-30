@@ -1,0 +1,9 @@
+Package: git.user
+Type: Package
+Title: Allows easy configuration of git user
+Version: 0.1
+Date: 2015-04-30
+Author: Mateusz Czapliński
+Maintainer: Mateusz Czapliński <czapkofan@gmail.com>
+Description: Allows easy changing of "user" config settings for git version control (git config user.name, user.email)
+License: MIT
